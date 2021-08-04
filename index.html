@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
     <div class="section_container">
         <div class="cube_container">
@@ -21,7 +23,7 @@
                     <img src="./images/7.png" alt="">
                 </div>
                 <div class="cube_face" id="anim_6">
-                    <img src="./images/6.png"  alt="">
+                    <img src="./images/6.png" alt="">
                 </div>
                 <div class="cube_face">
                     <img src="./images/5.png" alt="">
@@ -39,8 +41,8 @@
                     <img src="./images/1.png" alt="">
                 </div>
             </div>
-    
-    
+
+
             <div class="cube_layer second">
                 <div class="cube_face"></div>
                 <div class="cube_face"></div>
@@ -52,8 +54,8 @@
                 <div class="cube_face"></div>
                 <div class="cube_face"></div>
             </div>
-    
-            
+
+
             <div class="cube_layer third">
                 <div class="cube_face"></div>
                 <div class="cube_face"></div>
@@ -67,22 +69,9 @@
             </div>
         </div>
     </div>
-  <button>click</button>
+    <button>click</button>
 
-<script>
-
-function animationFunc(layerName, animationName1, animationName2) {
-    const cubes = document.querySelector(`.${layerName}`).children;
-    
-    for(let i = 0; i < cubes.length; i++) {
-        i % 2 === 0 ? cubes[i].style.animation = `${animationName1} 5s ease-in-out infinite alternate` :cubes[i].style.animation = `${animationName2} 5s ease-in-out infinite alternate`;  
-    } 
-}
-
-animationFunc('first', 'cube_anim_1','cube_anim_2');
-animationFunc('second', 'cube_anim_3','cube_anim_4');
-animationFunc('third', 'cube_anim_5','cube_anim_6');
-
-</script>
+    <script src="./main.js"></script>
 </body>
+
 </html>
