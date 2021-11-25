@@ -18,7 +18,6 @@
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
-  background: #ffdb8e;
 }
 
 .cube_container {
@@ -50,10 +49,6 @@
           transform: translateZ(460px);
 }
 
-.cube_face img {
-  width: 100%;
-}
-
 .cube_face::after {
   content: '';
   background: #ababab;
@@ -76,6 +71,18 @@
   background: #cecaca;
   -webkit-transform: skewY(45deg);
           transform: skewY(45deg);
+}
+
+#diff_face {
+  background: #ff8e5e;
+}
+
+#diff_face::after {
+  background: #df551c;
+}
+
+#diff_face::before {
+  background: #f1713b;
 }
 
 .cube_layer {
